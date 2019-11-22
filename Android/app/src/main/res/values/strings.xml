@@ -3,4 +3,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="continue_with_google">Continue with google</string>
+    <string name="welcome_string">Наша платформа поможет вам в выборе университета</string>
+    <string name="Begin_string">Начать</string>
+    <string name="welcome">Добро пожаловать, Динмухаммед</string>
+    <string name="code">Код:</string>
+    <string name="_302">302</string>
+    <string name="sub_info">Прочее: Общежитие, футбольное поле, фитнес</string>
+    <string name="sdu">Сулейман Демирель Университет</string>
 </resources>
