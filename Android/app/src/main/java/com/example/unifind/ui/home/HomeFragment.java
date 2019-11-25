@@ -20,9 +20,10 @@ public class HomeFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.universities_page, container, false);
+        homeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
+        View root = inflater.inflate(R.layout.login_page, container, false);
         return root;
     }
+
+
 }

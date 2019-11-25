@@ -76,7 +76,6 @@
         android:textSize="7sp"
         tools:ignore="SmallSp" />
 
-
     <TextView
         android:id="@+id/university_sub_info"
         android:layout_width="wrap_content"
@@ -90,4 +89,5 @@
         android:textSize="6sp"
         android:fontFamily="@font/helvetica"
         tools:ignore="SmallSp" />
+
 </RelativeLayout>
