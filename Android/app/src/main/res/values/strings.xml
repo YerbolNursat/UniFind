@@ -11,4 +11,78 @@
     <string name="_302">302</string>
     <string name="sub_info">Прочее: Общежитие, футбольное поле, фитнес</string>
     <string name="sdu">Сулейман Демирель Университет</string>
+    <string name="Universities">Университеты:</string>
+    <string name="Specialisation">Специальность:</string>
+    <string name="rabiya_iolji">Rabiya Iolji</string>
+    <string-array name="rv">
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+        <item>Sdu</item>
+    </string-array>
+    <string-array name="subject1">
+        <item>Биология</item>
+        <item>Всемирная история</item>
+        <item>География</item>
+        <item>Иностранный язык</item>
+        <item>Казахский /Русский язык</item>
+        <item>Казахский язык</item>
+        <item>Математика</item>
+        <item>Русский язык</item>
+        <item>Творческий экзамен</item>
+        <item>Химия</item>
+    </string-array>
+    <string-array name="subject2">
+        <item>География</item>
+        <item>Химия</item>
+        <item>Человек.Обшество.Право</item>
+        <item>Иностранный язык </item>
+        <item>Математика</item>
+        <item>Всемирная История</item>
+        <item>Казахская /Русская литература</item>
+        <item>Казахская литература</item>
+        <item>Физика</item>
+        <item>Русская литература</item>
+        <item>Творческий экзамен</item>
+        <item>Биология</item>
+    </string-array>
+
+    <string-array name="Cities">
+        <item>Астана</item>
+        <item>Алматы</item>
+        <item>Актау</item>
+        <item>Актобе</item>
+        <item>Аркалык</item>
+        <item>Атырау</item>
+        <item>Жезказган</item>
+        <item>Караганда</item>
+        <item>Каскелен</item>
+        <item>Кокшетау</item>
+        <item>Костанай</item>
+        <item>Кызылорда</item>
+        <item>Павлодар</item>
+        <item>Петропавск</item>
+        <item>Рудный</item>
+        <item>Семипалатинск</item>
+        <item>Талдыкорган</item>
+        <item>Тараз</item>
+        <item>Туркестан</item>
+        <item>Уральск</item>
+        <item>Усть-каменогорск</item>
+        <item>Шымкент</item>
+        <item>Экибастуз</item>
+
+
+    </string-array>
+
 </resources>

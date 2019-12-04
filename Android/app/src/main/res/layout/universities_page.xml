@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,11 +25,11 @@
             android:id="@+id/imageView3"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:src="@mipmap/welcome_icon"
             app:layout_constraintBottom_toTopOf="@+id/guideline12"
             app:layout_constraintEnd_toStartOf="@+id/guideline14"
             app:layout_constraintStart_toStartOf="@+id/guideline13"
-            app:layout_constraintTop_toTopOf="@+id/guideline"
-            android:src="@mipmap/welcome_icon" />
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <TextView
             android:id="@+id/textView"
@@ -131,49 +132,56 @@
             app:layout_constraintGuide_percent="0.55" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:visibility="visible">
+        android:layout_height="match_parent">
 
-        <SearchView
-            android:id="@+id/university_search"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/search_layout"
-            android:queryHint="Search" />
-
-        <TextView
-            android:id="@+id/top_universities"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/helvetica"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:padding="25dp"
-            android:text="Топ Университеты 2019"
-
-            />
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/universities_rv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
         <ProgressBar
             android:id="@+id/progress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="invisible"/>
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <SearchView
+                android:id="@+id/university_search"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/search_layout"
+                android:queryHint="Search" />
+
+            <TextView
+                android:id="@+id/top_universities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:padding="25dp"
+                android:text="Топ Университеты 2019"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/universities_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 
 </com.google.android.material.circularreveal.CircularRevealLinearLayout>

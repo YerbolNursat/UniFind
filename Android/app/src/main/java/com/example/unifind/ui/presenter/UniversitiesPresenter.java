@@ -22,16 +22,15 @@ public class UniversitiesPresenter {
         this.view = view;
     }
 
-    public void loadData(){
+    public void loadData() {
         view.ShowWait();
         compositeDisposable = new CompositeDisposable();
-        Disposable disposable=ApiFactory.getInstance().getApiService().getUniversities()
+        Disposable disposable = ApiFactory.getInstance().getApiService().getUniversities()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<Universities>>() {
                     @Override
                     public void accept(List<Universities> universities) throws Exception {
-                        Log.d("Tag", "Ok");
                         view.ShowData(universities);
                     }
                 }, new Consumer<Throwable>() {
@@ -42,7 +41,6 @@ public class UniversitiesPresenter {
                     }
                 });
         compositeDisposable.add(disposable);
-        view.RemoveWait();
     }
 
     public void disposeDisposable() {

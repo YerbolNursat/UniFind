@@ -1,7 +1,6 @@
 package com.example.unifind.ui.view;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +16,7 @@ import com.example.unifind.R;
 import com.example.unifind.ui.model.Universities;
 import com.example.unifind.ui.presenter.UniversitiesPresenter;
 import com.example.unifind.ui.view.adapter.UniversitiesAdapter;
+
 import java.util.List;
 
 
@@ -26,6 +26,7 @@ public class UniversitiesFragment extends Fragment implements com.example.unifin
     UniversitiesPresenter presenter;
     UniversitiesAdapter adapter;
     ProgressBar progressBar;
+
     public android.view.View onCreateView(@NonNull LayoutInflater inflater,
                                           ViewGroup container, Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.universities_page, container, false);
@@ -36,6 +37,7 @@ public class UniversitiesFragment extends Fragment implements com.example.unifin
 
     @Override
     public void ShowData(List<Universities> universities) {
+        RemoveWait();
         adapter = new UniversitiesAdapter(universities);
         rv.setAdapter(adapter);
     }
@@ -52,13 +54,13 @@ public class UniversitiesFragment extends Fragment implements com.example.unifin
 
     @Override
     public void showError() {
-        Toast.makeText(root.getContext(),"Something wrong with internet connection",Toast.LENGTH_SHORT).show();
+        Toast.makeText(root.getContext(), "Something wrong with internet connection", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void initialize() {
-        progressBar=root.findViewById(R.id.progress);
-        rv=root.findViewById(R.id.universities_rv);
+        progressBar = root.findViewById(R.id.progress);
+        rv = root.findViewById(R.id.universities_rv);
         presenter = new UniversitiesPresenter(this);
         rv.setLayoutManager(new LinearLayoutManager(root.getContext()));
     }

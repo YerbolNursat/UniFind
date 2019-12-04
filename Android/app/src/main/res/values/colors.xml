@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#ffffff</color>
+    <color name="progressBar">#3F3DA0</color>
+
 </resources>

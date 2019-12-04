@@ -8,7 +8,7 @@
         />
 
     <item
-        android:id="@+id/uni_picker"
+        android:id="@+id/uni_chooser"
         android:icon="@drawable/ic_search"
         android:title="" />
 

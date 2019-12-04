@@ -1,0 +1,1009 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline17"
+        app:layout_constraintStart_toStartOf="@+id/guideline16"
+        app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Какие предметы у вас?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Предмет 1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/subject1"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Предмет 2"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/subject2"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="В какой город хотите?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/Cities"
+            android:minHeight="48dp"
+
+            android:padding="10dp"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Нуждаетесь ли в общежитий?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:paddingLeft="50dp"
+                android:text="Да" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="Нет" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/helvetica"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Сколько набрали ЕНТ?"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/violet_rounded_corner"
+            android:gravity="center"
+            android:text="Готово"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_question_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:padding="14dp"
+                android:text="Строить свою карьеру в пределах конкретной научной или технической сферы."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Осуществлять наблюдение и контроль над людьми, влиять на них на всех уровнях."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Иметь возможность делать все по-своему и не быть стесненным правилами какой-либо организации."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Иметь постоянное место работы с гарантированным окладом и социальной защищенностью."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Употреблять свое умение общаться на пользу людям, помогать другим."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Работать над проблемами, которые представляются почти неразрешимыми."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Вести такой образ жизни, чтобы интересы семьи и карьеры взаимно уравновешивали друг друга."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Создать и построить нечто, что будет всецело моим произведением или идеей."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Продолжать работу по своей специальности, чем получить более высокую должность, не связанную с моей специальностью."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Быть первым руководителем в организации."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Иметь работу, не связанную с режимом или другими организационными ограничениями."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Работать в организации, которая обеспечит мне стабильность на длительный период времени."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Употребить свои умения и способности на то, чтобы сделать мир лучше."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Соревноваться с другими и побеждать."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Строить карьеру, которая позволит мне не изменять своему образу жизни."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Создать новое коммерческое предприятие."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Посвятить всю жизнь избранной профессии."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Занять высокую руководящую должность."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Иметь работу, которая представляет максимум свободы и автономии в выборе характера занятий, времени выполнения и т.д."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Оставаться на одном месте жительства, чем переехать в связи с повышением."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Иметь возможность использовать свои умения и таланты для служения важной цели."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Единственная действительная цель моей карьеры – находить и решать трудные проблемы, независимо от того, в какой области они возникли ."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я всегда стремлюсь уделять одинаковое внимание моей семье и моей карьере. "
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я всегда нахожусь в поиске идей, которые дадут мне возможность начать и построить свое собственное дело."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я соглашусь на руководящую должность только в том случае, если она находится в сфере моей профессиональной компетенции."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я хотел бы достичь такого положения в организации, которое давало бы возможность наблюдать за работой других и интегрировать их деятельность."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="В моей профессиональной деятельности я более всего заботился о своей свободе и автономии."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Для меня важнее остаться на нынешнем месте жительства, чем получить повышение или новую работу в другой деятельности."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я всегда искал работу, на которой мог бы приносить пользу другим."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Соревнование и выигрыш – это наиболее важные и волнующие стороны моей карьеры."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Карьера имеет смысл только в том случае, если она позволяет вести жизнь, которая мне нравится."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Предпринимательская деятельность составляет центральную часть моей карьеры."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я бы скорее ушел из организации, чем стал заниматься работой, не связанной с моей профессией."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я буду считать, что достиг успеха в карьере только тогда, когда стану руководителем высокого уровня в солидной организации."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я не хочу, чтобы меня стесняла какая-нибудь организация или мир бизнеса."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я бы предпочел работать в организации, которая обеспечивает длительный контракт."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я бы хотел посвятить свою карьеру достижению важной и полезной цели."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я чувствую себя преуспевающим только тогда, когда я постоянно вовлечен в решение трудных проблем или в ситуацию соревнования."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Выбрать и поддерживать определенный образ жизни важнее, чем добиваться успеха в карьере."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я всегда хотел основать и построить свой собственный бизнес."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/text_view_question_41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/helvetica"
+                android:gravity="center"
+                android:text="Я предпочитаю работу, которая не связана с командировками."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline18">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:layout_marginLeft="50dp"
+            android:id="@+id/donut_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            custom:donut_progress="30"
+            custom:donut_background_color = "#000000"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/directions_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
