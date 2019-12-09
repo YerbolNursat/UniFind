@@ -1,9 +1,10 @@
 package com.example.unifind.ui.view.adapter;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,11 +17,13 @@ import com.example.unifind.ui.model.Universities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapter.UniversitiesViewHolder> {
+public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapter.UniversitiesViewHolder> implements Filterable {
     private List<Universities> universities;
+    private List<Universities> universitiesFull;
 
     public UniversitiesAdapter(List<Universities> universities) {
         this.universities = universities;
+        universitiesFull = new ArrayList<>(universities);
     }
 
 
@@ -36,7 +39,11 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
         Universities university = universities.get(position);
         holder.name.setText(university.getName());
         holder.code_info.setText(university.getCode());
-        holder.sub_items.setText(university.getDescription());
+        if (university.getDormitory() == 1) {
+            holder.sub_items.setText("Есть");
+        } else {
+            holder.sub_items.setText("Нет");
+        }
 
     }
 
@@ -44,6 +51,44 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
     public int getItemCount() {
         return universities.size();
     }
+
+    @Override
+    public Filter getFilter() {
+        return filter;
+    }
+
+    private Filter filter = new Filter() {
+        @Override
+        protected FilterResults performFiltering(CharSequence constraint) {
+            List<Universities> filteredList = new ArrayList<>();
+
+            if (constraint == null || constraint.length() == 0) {
+                filteredList.addAll(universitiesFull);
+            } else {
+                String filterPattern = constraint.toString().toLowerCase().trim().replaceAll(" ", "");
+                for (Universities item : universitiesFull) {
+                    if (item.getName().toLowerCase().trim().replaceAll(" ", "").contains(filterPattern)) {
+                        if (!(filteredList.contains(item))) {
+                            filteredList.add(item);
+                        }
+                    }
+
+                }
+            }
+
+            FilterResults results = new FilterResults();
+            results.values = filteredList;
+            return results;
+        }
+
+        @Override
+        protected void publishResults(CharSequence constraint, FilterResults results) {
+            universities.clear();
+            universities.addAll((List) results.values);
+            notifyDataSetChanged();
+        }
+    };
+
 
     public class UniversitiesViewHolder extends RecyclerView.ViewHolder {
         TextView name, code_info, sub_items;

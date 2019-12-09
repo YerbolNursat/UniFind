@@ -1,9 +1,12 @@
 package com.example.unifind.ui.presenter;
 
 import android.util.Log;
+import android.view.inputmethod.EditorInfo;
+import android.widget.SearchView;
 
 import com.example.unifind.ui.model.Universities;
 import com.example.unifind.ui.view.View;
+import com.example.unifind.ui.view.adapter.UniversitiesAdapter;
 import com.example.unifind.utils.ApiFactory;
 
 import java.util.List;
@@ -41,6 +44,22 @@ public class UniversitiesPresenter {
                     }
                 });
         compositeDisposable.add(disposable);
+    }
+
+    public void search(final UniversitiesAdapter adapter, SearchView searchView) {
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                adapter.getFilter().filter(newText);
+                return false;
+            }
+        });
     }
 
     public void disposeDisposable() {

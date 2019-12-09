@@ -11,7 +11,7 @@
         tools:layout="@layout/login_page" />
     <fragment
         android:id="@+id/uni_chooser"
-        android:name="com.example.unifind.ui.view.ChooserFragment"
+        android:name="com.example.unifind.ui.view.PickerFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/universities_page" />
 

@@ -10,14 +10,14 @@ public class Universities {
     @SerializedName("Code")
     @Expose
     private String code;
-    @SerializedName("Description")
+    @SerializedName("Dormitory")
     @Expose
-    private String Description;
+    private Integer Dormitory;
 
-    public Universities(String name, String code, String description) {
+    public Universities(String name, String code, Integer dormitory) {
         this.name = name;
         this.code = code;
-        Description = description;
+        this.Dormitory = dormitory;
     }
 
     public String getName() {
@@ -36,11 +36,11 @@ public class Universities {
         this.code = code;
     }
 
-    public String getDescription() {
-        return Description;
+    public Integer getDormitory() {
+        return Dormitory;
     }
 
-    public void setDescription(String description) {
-        Description = description;
+    public void setDormitory(Integer dormitory) {
+        Dormitory = dormitory;
     }
 }
