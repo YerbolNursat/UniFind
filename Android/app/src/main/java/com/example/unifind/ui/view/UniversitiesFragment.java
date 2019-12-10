@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unifind.R;
+import com.example.unifind.constants.Constants;
 import com.example.unifind.ui.model.Universities;
 import com.example.unifind.ui.presenter.UniversitiesPresenter;
 import com.example.unifind.ui.view.adapter.UniversitiesAdapter;
@@ -28,7 +30,7 @@ public class UniversitiesFragment extends Fragment implements com.example.unifin
     private UniversitiesAdapter adapter;
     private ProgressBar progressBar;
     private SearchView searchView;
-
+    private TextView textuniversity;
     public android.view.View onCreateView(@NonNull LayoutInflater inflater,
                                           ViewGroup container, Bundle savedInstanceState) {
         root = inflater.inflate(R.layout.universities_page, container, false);
@@ -69,5 +71,12 @@ public class UniversitiesFragment extends Fragment implements com.example.unifin
         presenter = new UniversitiesPresenter(this);
         rv.setLayoutManager(new LinearLayoutManager(root.getContext()));
         searchView = root.findViewById(R.id.university_search);
+        textuniversity=root.findViewById(R.id.universities);
+        if (Constants.LANG.equals("KZ")){
+            textuniversity.setText("Университеттер");
+        }else if (Constants.LANG.equals("ENG")){
+            textuniversity.setText("Universities");
+        }
+
     }
 }

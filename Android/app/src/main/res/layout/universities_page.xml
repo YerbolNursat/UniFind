@@ -161,13 +161,13 @@
                 android:queryHint="Search" />
 
             <TextView
-                android:id="@+id/top_universities"
+                android:id="@+id/universities"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/helvetica"
                 android:gravity="center"
                 android:padding="25dp"
-                android:text="Топ Университеты 2019"
+                android:text="Университеты"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="18sp"

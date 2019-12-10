@@ -31,8 +31,9 @@ public class ProfessionsAdapter  extends RecyclerView.Adapter<ProfessionsAdapter
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProfessionViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final ProfessionViewHolder holder, int position) {
         holder.name.setText(Allprofessions.get(position).getName());
+
     }
 
     @Override

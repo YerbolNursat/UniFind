@@ -3,6 +3,7 @@ package com.example.unifind.ui.view;
 
 import com.example.unifind.ui.model.Directions;
 import com.example.unifind.ui.model.Professions;
+import com.example.unifind.ui.model.Specialities;
 import com.example.unifind.ui.model.Universities;
 
 import java.util.List;
@@ -29,14 +30,22 @@ public interface View {
 
         void ShowProfessions(List<Professions> professions);
 
-        void ShowSpecialities();
+        void ShowSpecialities(List<Specialities> specialities);
 
         void initialize();
 
+        void ShowWait();
+
+        void RemoveWait();
+
+        void makeToast(String text);
+
+        void makeIntent();
     }
 
     interface UserView {
-
+        void initialise();
+        void showdata(List<com.example.unifind.ui.model.Room.Specialities> specialities);
     }
 
     interface LoginPage {

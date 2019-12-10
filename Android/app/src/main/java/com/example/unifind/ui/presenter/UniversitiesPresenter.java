@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.inputmethod.EditorInfo;
 import android.widget.SearchView;
 
+import com.example.unifind.constants.Constants;
 import com.example.unifind.ui.model.Universities;
 import com.example.unifind.ui.view.View;
 import com.example.unifind.ui.view.adapter.UniversitiesAdapter;
@@ -28,7 +29,7 @@ public class UniversitiesPresenter {
     public void loadData() {
         view.ShowWait();
         compositeDisposable = new CompositeDisposable();
-        Disposable disposable = ApiFactory.getInstance().getApiService().getUniversities()
+        Disposable disposable = ApiFactory.getInstance().getApiService().getUniversities(Constants.LANG)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<List<Universities>>() {

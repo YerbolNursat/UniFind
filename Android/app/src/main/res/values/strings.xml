@@ -18,74 +18,180 @@
     <string name="autonomy">Автономия</string>
     <string name="just_question">Строить свою карьеру в пределах конкретной научной или технической сферы.</string>
     <string name="ready">Готово</string>
-    <string-array name="rv">
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-        <item>Sdu</item>
-    </string-array>
+
+
     <string-array name="subject1">
+        <item>Математика</item>
         <item>Биология</item>
         <item>Всемирная история</item>
-        <item>География</item>
-        <item>Иностранный язык</item>
+        <item>Творческий экзамен</item>
         <item>Казахский /Русский язык</item>
-        <item>Казахский язык</item>
-        <item>Математика</item>
-        <item>Русский язык</item>
-        <item>Творческий экзамен</item>
-        <item>Химия</item>
-    </string-array>
-    <string-array name="subject2">
+        <item>Иностранный язык</item>
         <item>География</item>
+        <item>Казахский язык</item>
         <item>Химия</item>
-        <item>Человек.Обшество.Право</item>
-        <item>Иностранный язык </item>
+        <item>Русский язык</item>
+        <item>Казахский/</item>
+    </string-array>
+    <string-array name="subject1_KZ">
         <item>Математика</item>
-        <item>Всемирная История</item>
-        <item>Казахская /Русская литература</item>
-        <item>Казахская литература</item>
+        <item>Биология</item>
+        <item>Әлемдік тарих</item>
+        <item>Шығармашылық емтихан</item>
+        <item>Қазақ / орыс тілі</item>
+        <item>Шетел тілі</item>
+        <item>География</item>
+        <item>Қазақ тілі</item>
+        <item>Химия</item>
+        <item>Орыс тілі</item>
+        <item>Қазақ /</item>
+    </string-array>
+    <string-array name="subject1_ENG">
+        <item>Maths</item>
+        <item>Biology</item>
+        <item>The World History</item>
+        <item>Creative exam</item>
+        <item>Kazakh / Russian language</item>
+        <item>Foreign language</item>
+        <item>Geography</item>
+        <item>Kazakh language</item>
+        <item>Chemistry</item>
+        <item>Russian language</item>
+        <item>Kazakh/</item>
+    </string-array>
+
+
+    <string-array name="subject2">
         <item>Физика</item>
-        <item>Русская литература</item>
+        <item>Химия</item>
+        <item>География</item>
         <item>Творческий экзамен</item>
+        <item>Казахская /Русская литература</item>
+        <item>Всемирная история</item>
+        <item>Математика</item>
+        <item>Человек Общество Право</item>
+        <item>Казахская литература</item>
+        <item>Иностранный язык</item>
+        <item>Русская литература</item>
+        <item>Русский язык</item>
         <item>Биология</item>
     </string-array>
 
+    <string-array name="subject2_KZ">
+        <item>Физика</item>
+        <item>Химия</item>
+        <item>География</item>
+        <item>Шығармашылық емтихан</item>
+        <item>Қазақ / орыс әдебиеті</item>
+        <item>Әлемдік тарих</item>
+        <item>Математика</item>
+        <item>Еркек Қоғам Дұрыс</item>
+        <item>Қазақ әдебиеті</item>
+        <item>Дүниежүзілік тарих</item>
+        <item>Шетел тілі</item>
+        <item>орыс әдебиеті</item>
+        <item>Орыс тілі</item>
+        <item>Биология</item>
+    </string-array>
+    <string-array name="subject2_ENG">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Geography</item>
+        <item>Creative exam</item>
+        <item>Kazakh / Russian literature</item>
+        <item>The World History</item>
+        <item>Maths</item>
+        <item>Man Society Right</item>
+        <item>Kazakh literature</item>
+        <item>Foreign language</item>
+        <item>Russian literature</item>
+        <item>Russian language</item>
+        <item>Biology</item>
+        <item>Man Society Right</item>
+    </string-array>
     <string-array name="Cities">
         <item>Астана</item>
-        <item>Алматы</item>
         <item>Актау</item>
         <item>Актобе</item>
         <item>Аркалык</item>
         <item>Атырау</item>
+        <item>Усть-Каменогорск</item>
         <item>Жезказган</item>
+        <item>Талдыкорган</item>
+        <item>Уральск</item>
+        <item>Алматы</item>
         <item>Караганда</item>
-        <item>Каскелен</item>
+        <item>Кызылорда</item>
         <item>Кокшетау</item>
         <item>Костанай</item>
-        <item>Кызылорда</item>
-        <item>Павлодар</item>
-        <item>Петропавск</item>
-        <item>Рудный</item>
-        <item>Семипалатинск</item>
-        <item>Талдыкорган</item>
-        <item>Тараз</item>
         <item>Туркестан</item>
-        <item>Уральск</item>
-        <item>Усть-каменогорск</item>
+        <item>Павлодар</item>
+        <item>Рудный</item>
+        <item>Петропавловск</item>
+        <item>Семей</item>
+        <item>Тараз</item>
         <item>Шымкент</item>
-        <item>Экибастуз</item>
+        <item>Астана</item>
+        <item>Жетысай</item>
+        <item>Екибастуз</item>
+        <item>Каскелен Алматы</item>
 
+
+    </string-array>
+
+    <string-array name="Cities_KZ">
+        <item>Астана</item>
+        <item>Ақтау</item>
+        <item>Актобе</item>
+        <item>Арқалық</item>
+        <item>Атырау</item>
+        <item>Усть-Каменогорск</item>
+        <item>Жезқазған</item>
+        <item>Талдықорған</item>
+        <item>Орал</item>
+        <item>Алматы</item>
+        <item>Қарағанды</item>
+        <item>Қызылорда</item>
+        <item>Көкшетау</item>
+        <item>Костанай</item>
+        <item>Туркестан</item>
+        <item>Павлодар</item>
+        <item>Рудный</item>
+        <item>Петропавловск</item>
+        <item>Семей</item>
+        <item>Тараз</item>
+        <item>Шымкент</item>
+        <item>Жетысай</item>
+        <item>Екибастуз</item>
+        <item>Каскелен Алматы</item>
+
+    </string-array>
+
+    <string-array name="Cities_ENG">
+        <item>Astana</item>
+        <item>Aktau</item>
+        <item>Aktobe</item>
+        <item>Arkalyk</item>
+        <item>Atyrau</item>
+        <item>Ust-Kamenogorsk</item>
+        <item>Zhezkazgan</item>
+        <item>Taldykorgan</item>
+        <item>Uralsk</item>
+        <item>Almaty</item>
+        <item>From Karaganda</item>
+        <item>Kyzylorda</item>
+        <item>Kokshetau</item>
+        <item>Kostanai</item>
+        <item>Turkestan</item>
+        <item>Pavlodar</item>
+        <item>Rudnyi</item>
+        <item>Petropavlovsk</item>
+        <item>Semey</item>
+        <item>Taraz</item>
+        <item>Shymkent</item>
+        <item>Let\'s go</item>
+        <item>Eqibastuz</item>
+        <item>Kaskelen Almaty</item>
 
     </string-array>
     <string-array name="Questions">
@@ -130,5 +236,13 @@
         <item>Выбрать и поддерживать определенный образ жизни важнее, чем добиваться успеха в карьере.</item>
         <item>Я всегда хотел основать и построить свой собственный бизнес.</item>
         <item>Я предпочитаю работу, которая не связана с командировками.</item>
+    </string-array>
+
+    <string-array name="Questions_KZ">
+
+    </string-array>
+
+    <string-array name="Questions_ENG">
+
     </string-array>
 </resources>

@@ -8,18 +8,12 @@
     <View
         android:layout_width="wrap_content"
         android:layout_height="0.7dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginRight="30dp"
         android:background="@drawable/rectangle" />
 
     <View
         android:layout_width="wrap_content"
         android:layout_height="0.7dp"
-        android:layout_below="@id/universities_image"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="30dp"
+        android:layout_below="@id/text_price"
         android:background="@drawable/rectangle" />
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -50,58 +44,110 @@
         tools:ignore="SmallSp" />
 
     <TextView
-        android:id="@+id/university_code"
+        android:id="@+id/text_speciality"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/university_name"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/universities_image"
-        android:text="@string/code"
+        android:text="Специальность: "
         android:fontFamily="@font/helvetica"
         android:textColor="#6C6B6B"
         android:textSize="7sp"
         tools:ignore="SmallSp" />
 
     <TextView
-        android:id="@+id/university_code_type"
+        android:id="@+id/speciality_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/university_name"
         android:fontFamily="@font/helvetica"
         android:layout_marginTop="5dp"
-        android:layout_marginStart="2dp"
-        android:layout_toEndOf="@+id/university_code"
+        android:layout_toEndOf="@+id/text_speciality"
         android:text="@string/_302"
         android:textColor="#6C6B6B"
         android:textSize="7sp"
         tools:ignore="SmallSp" />
     <TextView
-        android:id="@+id/university_dormitory"
+        android:id="@+id/text_code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/university_code"
-        android:fontFamily="@font/helvetica"
+        android:layout_below="@+id/text_speciality"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/universities_image"
-        android:layout_marginStart="20dp"
-        android:text="Общага:"
+        android:text="Код: "
+        android:fontFamily="@font/helvetica"
         android:textColor="#6C6B6B"
         android:textSize="7sp"
         tools:ignore="SmallSp" />
 
     <TextView
-        android:id="@+id/university_sub_info"
+        android:id="@+id/code_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/university_code"
-        android:layout_marginStart="2dp"
+        android:layout_below="@+id/text_speciality"
+        android:fontFamily="@font/helvetica"
         android:layout_marginTop="5dp"
-        android:layout_toEndOf="@+id/university_dormitory"
-        android:text="@string/sub_info"
+        android:layout_toEndOf="@+id/text_code"
+        android:text="@string/_302"
         android:textColor="#6C6B6B"
         android:textSize="7sp"
-        android:fontFamily="@font/helvetica"
         tools:ignore="SmallSp" />
+    <TextView
+        android:id="@+id/text_ent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_code"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/universities_image"
+        android:text="Eнт"
+        android:fontFamily="@font/helvetica"
+        android:textColor="#6C6B6B"
+        android:textSize="7sp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/ent_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_code"
+        android:fontFamily="@font/helvetica"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/text_ent"
+        android:text="@string/_302"
+        android:textColor="#6C6B6B"
+        android:textSize="7sp"
+        tools:ignore="SmallSp" />
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_code"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/ent_type"
+        android:text="Стоймость: "
+        android:fontFamily="@font/helvetica"
+        android:textColor="#6C6B6B"
+        android:textSize="7sp"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/price_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_code"
+        android:fontFamily="@font/helvetica"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/text_price"
+        android:text="@string/_302"
+        android:textColor="#6C6B6B"
+        android:textSize="7sp"
+        tools:ignore="SmallSp" />
+
+
 
 </RelativeLayout>

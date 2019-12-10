@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.unifind.R;
+import com.example.unifind.constants.Constants;
 import com.example.unifind.ui.model.Universities;
 
 import java.util.ArrayList;
@@ -39,11 +40,31 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
         Universities university = universities.get(position);
         holder.name.setText(university.getName());
         holder.code_info.setText(university.getCode());
+
         if (university.getDormitory() == 1) {
-            holder.sub_items.setText("Есть");
+            if (Constants.LANG.equals("ENG")) {
+                holder.sub_items.setText("Available");
+                holder.code.setText("Code:");
+                holder.dormitory.setText("Dormitory:");
+            } else if (Constants.LANG.equals("KZ")) {
+                holder.sub_items.setText("Бар");
+                holder.dormitory.setText("Жатақхана:");
+            } else {
+                holder.sub_items.setText("Есть");
+            }
         } else {
-            holder.sub_items.setText("Нет");
+            if (Constants.LANG.equals("ENG")) {
+                holder.sub_items.setText("No");
+                holder.code.setText("Code:");
+                holder.dormitory.setText("Dormitory:");
+            } else if (Constants.LANG.equals("KZ")) {
+                holder.sub_items.setText("Жоқ");
+                holder.dormitory.setText("Жатақхана:");
+            } else {
+                holder.sub_items.setText("Нет");
+            }
         }
+
 
     }
 
@@ -91,17 +112,19 @@ public class UniversitiesAdapter extends RecyclerView.Adapter<UniversitiesAdapte
 
 
     public class UniversitiesViewHolder extends RecyclerView.ViewHolder {
-        TextView name, code_info, sub_items;
+        TextView name, code_info, sub_items, code, dormitory;
 
         public UniversitiesViewHolder(@NonNull final View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.university_name);
             code_info = itemView.findViewById(R.id.university_code_type);
             sub_items = itemView.findViewById(R.id.university_sub_info);
+            code = itemView.findViewById(R.id.university_code);
+            dormitory = itemView.findViewById(R.id.university_dormitory);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(itemView.getContext(), "Hello World", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(itemView.getContext(), "Just Smile", Toast.LENGTH_SHORT).show();
                 }
             });
         }
